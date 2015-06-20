@@ -1,2 +1,4 @@
-Temporal readme
+Php Exercises
 --
+
+Currently in development..
