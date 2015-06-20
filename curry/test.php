@@ -1,5 +1,5 @@
 <?php
-require('curry.php');
+require('index.php');
 
 class CurryTest extends \PHPUnit_Framework_TestCase
 {
