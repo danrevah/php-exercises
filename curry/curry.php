@@ -1,6 +1,6 @@
 <?php
 
-function Curry($func)
+function Curry($func, ...$initialParams)
 {
     if ( ! $func instanceof Closure) {
         return null;
@@ -8,8 +8,9 @@ function Curry($func)
 
     $ref = new ReflectionFunction($func);
     $argNum = count($ref->getParameters());
-    return function (...$params) use ($argNum, &$func) {
-        if ($argNum > 1) {
+    return function (...$params) use ($argNum, &$func, $initialParams) {
+        $params = array_merge($initialParams, $params);
+        if ($argNum > 1 && $argNum > count($params)) {
             $collect = function (...$collectParams) use (&$params, $argNum, &$collect, &$func) {
                 if (count($params) >= $argNum) {
                     return $func(...$params);
