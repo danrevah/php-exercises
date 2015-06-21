@@ -10,6 +10,6 @@ $value = function ($ret) {
 
 $init = once($value);
 echo $init(1); // echos 'This will be shown once' and '1'
-echo $init(2); // still echos '1'
-echo $init(3); // still echos '1'
+echo $init(2); // will only echo '1'
+echo $init(3); // will only echo '1'
 ```
