@@ -6,7 +6,7 @@ class BasicCalculatorTest extends \PHPUnit_Framework_TestCase
 
     public function testBasicCalculations()
     {
-        // Can contain only '+', '-', '(', ')', and integers
+        // Can contain only '+', '-', '(', ')', spaces, and integers
         $this->assertEquals(calc(' 1 + 1 '), 2);
         $this->assertEquals(calc('9-5 + 2'), 6);
 
