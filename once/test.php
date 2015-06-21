@@ -47,4 +47,20 @@ class OnceTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($init(1), '123');
         $this->assertEquals($count, 1);
     }
+
+    public function testMultiUse()
+    {
+        $count = 0;
+        $value = function ($ret) use (&$count) {
+            ++$count;
+            return $ret;
+        };
+
+        $init1 = once($value);
+        $init2 = once($value);
+        $this->assertEquals($init1(1), 1);
+        $this->assertEquals($init2(2), 2);
+        $this->assertEquals($init1(-1), 1);
+        $this->assertEquals($init2(-2), 2);
+    }
 }
