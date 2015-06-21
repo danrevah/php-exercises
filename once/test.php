@@ -13,7 +13,9 @@ class OnceTest extends \PHPUnit_Framework_TestCase
      */
     public function testOnceBasic()
     {
-        $value = function ($ret) {
+        $count = 0;
+        $value = function ($ret) use (&$count) {
+            ++$count;
             return $ret;
         };
 
@@ -21,6 +23,7 @@ class OnceTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($init(1), 1);
         $this->assertEquals($init(2), 1);
         $this->assertEquals($init(3), 1);
+        $this->assertEquals($count, 1);
     }
 
     public function testWithFuncAsString()
