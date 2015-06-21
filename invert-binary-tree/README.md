@@ -47,7 +47,9 @@ class BinaryNode
  echo $root->left->value; // 3
  echo $root->right->value; // 2
 ```
+
 Read more: https://en.wikipedia.org/?title=Binary_tree
+
 Inspired by Max Howell tweet (https://twitter.com/mxcl/status/608682016205344768):
 > "Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off."
 
