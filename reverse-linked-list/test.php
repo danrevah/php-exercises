@@ -33,7 +33,7 @@ class ReverseLinkedList extends \PHPUnit_Framework_TestCase
         $this->assertEquals($reversedHead->next->next->next->next->val, 1);
         $this->assertEquals($reversedHead->next->next->next->next->next, null);
     }
-    
+
     public function testSimple()
     {
         $head = new LinkedList(1);
