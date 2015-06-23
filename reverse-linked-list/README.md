@@ -23,7 +23,6 @@ class LinkedList {
  * 5 -> 4 -> 3 -> 2 -> 1 -> null
  */
 
-
 // Current list:  1 -> 2 -> 3 -> null
 $head = new LinkedList(1);
 $head->next = new LinkedList(2);
