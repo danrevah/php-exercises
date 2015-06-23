@@ -23,14 +23,15 @@ class LinkedList {
  * 5 -> 4 -> 3 -> 2 -> 1 -> null
  */
 
+
+// Current list:  1 -> 2 -> 3 -> null
 $head = new LinkedList(1);
 $head->next = new LinkedList(2);
 $head->next->next = new LinkedList(3);
 
-// Current list:  1 -> 2 -> 3 -> null
+// Reversed to: 3 -> 2 -> 1 -> null
 $reversedHead = reverse($head);
 
-// Reversed to: 3 -> 2 -> 1 -> null
 echo $head->val; // echos 3 
 echo $head->next->val; // echos 2
 echo $head->next->val; // echos 1
