@@ -2,8 +2,8 @@
 
 > Some advanced and basic php exercises and interview questions.
 
-it's using the TDD approach so make sure you check the test.php in each exercise directory to find out what exactly needs to be done.
-write your solution as the index.php inside the exercise directory and run the tests using PHPUnit.
+It's using the TDD approach so make sure to check the test.php in each exercise directory to find out what exactly needs to be done.
+Write your solution as the index.php file, inside the exercise directory and run the tests using PHPUnit.
 
 ### Dependencies:
 PHPUnit: https://phpunit.de/manual/current/en/installation.html
