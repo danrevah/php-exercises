@@ -15,7 +15,7 @@ class ReverseLinkedList extends \PHPUnit_Framework_TestCase
 {
     public function testReversed()
     {
-        // Reverse a linked list
+        // Reverse a single linked list
         // List: 1 -> 2 -> 3 -> 4 -> 5 -> null
         // Reversed: 5 -> 4 -> 3 -> 2 -> 1 -> null
         $head = new LinkedList(1);

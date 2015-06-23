@@ -14,7 +14,7 @@ class LinkedList {
 }
 
 /**
- * In this exercises you'll need to reverse a linked list
+ * In this exercises you'll need to reverse a single linked list
  * 
  * For example: 
  * 1 -> 2 -> 3 -> 4 -> 5 -> null
