@@ -20,7 +20,7 @@ class LinkedList {
  * 1 -> 2 -> 3 -> 4 -> 5 -> null
  *
  * Will be reversed to:
- * 5 -> 4-> 3 -> 2 -> 1 -> null
+ * 5 -> 4 -> 3 -> 2 -> 1 -> null
  */
 
 $head = new LinkedList(1);
