@@ -10,9 +10,9 @@ PHPUnit: https://phpunit.de/manual/current/en/installation.html
 
 ### Workflow:
 ```bash
-$ git clone https://github.com/danrevah/php-exercises.git
-$ cd php-exercises
-$ cd once
-$ touch index.php
-$ phpunit test.php
+[~]             $ git clone https://github.com/danrevah/php-exercises.git
+[~]             $ cd php-exercises
+[php-exercises] $ cd once
+[once]          $ touch index.php
+[once]          $ phpunit test.php
 ```
