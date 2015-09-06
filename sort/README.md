@@ -1,6 +1,6 @@
 Here's some basic usage of the file you'll need to create:
 
-> sortArray(), sorts an array of integers, using the native array sort functions would be considered cheating.
+> sorts an array of integers, using the native array sort functions would be considered cheating.
 > Can you make it sort better than n^2 ?
 
 ```php
