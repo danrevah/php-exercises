@@ -1,10 +1,5 @@
 <?php
 
-function sortZeros()
-{
-    return [1,2,3,4,0,'0',5,6];
-}
-
 class SortByOrder extends \PHPUnit_Framework_TestCase {
 
     public function testZeros()
